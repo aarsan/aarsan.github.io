@@ -1,18 +1,6 @@
-var app = angular.module('site', ['ui.bootstrap', 'ngAria']);
+var app = angular.module('site', []);
 
 
-app.factory('Backend', ['$http',
-    function($http) {
-        var get = function(url) {
-            return function() {
-                return $http.get(url).then(function(resp) {
-                    return resp.data;
-                });
-            }
-        };
+app.controller("MainController", function(){
 
-        return {
-            ahmet: get('data/mydata.json')
-        }
-    }
-])
+});
