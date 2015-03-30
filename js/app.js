@@ -1,22 +1,39 @@
-angular.module('app', []);
+(function () {
 
+	angular.module('app', []);
 
-// myinfo = [./data/mydata.json]
+	var demoApp = angular.module('demoApp', ['ngRoute']);
 
+	demoApp.config(['$routeProvider', function ($routeprovider) {
 
+		$routeProvider
+			.when('/', {
+					controller: 'SimpleController',
+					templateUrl: 'View1.html'
+				})
+			.when('partial2',
+				{
+					controller: 'SimpleController',
+					templateUrl: 'View2.html'	
+				})
+			.otherwise({ redirectTo: '/' })
 
-// app.factory('Backend', ['$http',
-//     function($http) {
-//         var get = function(url) {
-//             return function() {
-//                 return $http.get(url).then(function(resp) {
-//                     return resp.data;
-//                 });
-//             }
-//         };
+	}]);
 
-//         return {
-//             ahmet: get('data/mydata.json')
-//         }
-//     }
-// ])
+	demoApp.controller('SimpleController', function($scope) {
+		$scope.customers = [
+			{name:'Ahmet',city:'Chicago'}, 
+			{name:'Mary', city:'Courtland'}, 
+			{name:'Ripley', city:'Michigan City'}, 
+			{name:'Pickles', city:'Los Angeles'}
+		];
+
+		$scope.addCustomer = function () {
+			$scope.customers.push(
+				{ 
+					name: $scope.newCustomer.name, 
+				  	city: $scope.newCustomer.city });
+		};
+	});
+
+}());
