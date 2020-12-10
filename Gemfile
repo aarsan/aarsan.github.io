@@ -18,7 +18,7 @@ gem "minima"
 # gem "github-pages", "~> 3.9.0", group: :jekyll_plugins
 gem "github-pages", group: :jekyll_plugins
 
-theme: jekyll-theme-minimal
+theme: minima
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
