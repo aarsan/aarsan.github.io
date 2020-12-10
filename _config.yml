@@ -30,7 +30,7 @@ twitter_username: aarsan
 github_username:  aarsan
 
 # Build settings
-theme: minima
+theme: Slate
 plugins:
   - jekyll-feed
 
