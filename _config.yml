@@ -40,7 +40,7 @@ plugins:
 minima:
   date_format: "%b %-d, %Y"
   social_links:
-    # twitter: jekyllrb
+    twitter: jekyllrb
     github:  jekyll
 
 # Exclude from processing.
