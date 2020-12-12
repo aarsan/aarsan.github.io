@@ -6,4 +6,4 @@ categories: azure
 ---
 ## What is Azure Sentinel?
 
-Azure Sentinel is the first cloud-native SIEM from a major cloud provider.
+Azure Sentinel is the first cloud-native security information event management (SIEM) and security orchestration automated response (SOAR)from a major cloud provider.
