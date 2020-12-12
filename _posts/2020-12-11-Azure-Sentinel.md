@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Understanding Azure Sentinel"
+title:  "Azure Sentinel 101"
 date:   2020-12-11 22:16:53 -0600
 categories: azure
 ---
